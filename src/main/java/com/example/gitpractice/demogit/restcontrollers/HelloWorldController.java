@@ -17,4 +17,11 @@ public class HelloWorldController {
 	public HelloWorld sayJSONHello() {
 		return new HelloWorld();
 	}
+	
+	@GetMapping("/api/hello2")
+	public HelloWorld sayHelloAgain() {
+		HelloWorld hw = new HelloWorld();
+		hw.setMessage("Hello from the other side.......🎵🎵🎧💪");
+		return hw;
+	}
 }
